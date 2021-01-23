@@ -1,0 +1,63 @@
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up Form by Colorlib</title>
+
+    <!-- Font Icon -->
+   <!---<link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">-->
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="signup.component.css">
+</head>
+<body>
+    
+
+    <div class="main">
+
+        <div class="container">
+            
+            <div class="image"> <img src="/src/images/body-bg.jpg"  alt="image"> </div>
+                        <div class="signup-content">
+                <form method="POST" id="signup-form" class="signup-form">
+                    
+                    
+                    <h2>Sign up </h2>
+                    <p class="desc">to get discount 10% when pre - order <span>“Batman Beyond”</span></p>
+                    <div class="form-group">
+                        <input type="text" class="form-input" name="fname" id="fname" placeholder="First name"/>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-input" name="lname" id="lname" placeholder="Last name"/>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-input" name="email" id="email" placeholder="Email"/>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-input" name="uname" id="uname" placeholder="Username"/>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-input" name="password" id="password" placeholder="Password"/>
+                        <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                        <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
+                        <span class="checkmark"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="submit" id="submit" class="form-submit submit" value="Login up"/>
+                        <a href="#" routerLink="signup" class="submit-link submit">Login in</a>
+                    </div>
+                    <router-outlet></router-outlet>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
